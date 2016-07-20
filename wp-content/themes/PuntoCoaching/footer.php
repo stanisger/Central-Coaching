@@ -19,7 +19,7 @@
                   <i class="material-icons">phone
                   </i>
                   <span>
-                  <a href="tel:75873598">75 87 35 98</a>
+                  <a href="tel:75873601">75 87 36 01</a>
                   </span>
                 </p>
                 <p>
