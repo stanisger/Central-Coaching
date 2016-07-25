@@ -1,0 +1,77 @@
+   <section id="fourSection">
+     <div class="content">
+       <article>
+         <h3>Testimoniales</h3>
+         <p>Personas y empresas que han <br>
+            conseguido sus metas.</p>
+          <p class="btnContent">
+           <button class="btnColor btn-1 btn-1d">CONOCE MÁS</button>
+          </p>     
+       </article>
+       <article>
+        <div class="contentElements">
+            <div class="element">
+                 <a href="#">
+                  <i class="flaticon-commenting" aria-hidden="true"></i>
+                </a>
+                <img src="assets/img/thumbnailPerfil.png" alt="">
+                <div class="text">
+                  <h3>Claudia Montiel</h3>
+                  <h4>Arquitecto</h4>  
+                </div>
+                <p>
+                  “Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.”
+                </p>
+            </div>  
+         </div>
+         <div class="contentElements">
+            <div class="element">
+                 <a href="#">
+                  <i class="flaticon-commenting" aria-hidden="true"></i>
+                </a>
+                <img src="assets/img/thumbnailPerfil2.png" alt="">
+                <div class="text">
+                  <h3>Claudia Montiel</h3>
+                  <h4>Arquitecto</h4>  
+                </div>
+                <p>
+                  “Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.”
+                </p>
+            </div>  
+         </div>
+        <div class="contentElements">
+            <div class="element">
+                <a href="#">
+                  <i class="flaticon-commenting" aria-hidden="true"></i>
+                </a>  
+                <img src="assets/img/thumbnailPerfil2.png" alt="">
+                <div class="text">
+                  <h3>Claudia Montiel</h3>
+                  <h4>Arquitecto</h4>  
+                </div>
+                <p>
+                  “Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.”
+                </p>
+            </div>  
+         </div>
+          <div class="contentElements">
+            <div class="element">
+                <a href="#">
+                  <i class="flaticon-commenting" aria-hidden="true"></i>
+                </a>  
+                <img src="assets/img/thumbnailPerfil2.png" alt="">
+                <div class="text">
+                  <h3>Claudia Montiel</h3>
+                  <h4>Arquitecto</h4>  
+                </div>
+                <p>
+                  “Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.”
+                </p>
+            </div>  
+         </div>
+       </article>
+    <!--    <p class="btnContent">
+         <button class="btnColor btn-1 btn-1d">VER MÁS</button>
+        </p>  -->
+     </div>
+   </section>

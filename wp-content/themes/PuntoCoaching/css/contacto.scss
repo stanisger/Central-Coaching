@@ -1,0 +1,281 @@
+#eyecatcher{
+	.three{
+		
+		img{
+			 width: 706px;
+    		transform: translatex(-44%);
+    		top: -48px;
+
+		}
+		@media (min-width:621px){
+			img{
+				width: 900px;
+			}
+		}
+		@media (min-width:780px){
+			img{
+				width: 1024px;
+				top: -70px;
+				transform: translatex(-54%);
+			}
+		}
+		@media (min-width:941px){
+			img{
+				width: 1520px;
+				top: -130px;
+				transform: translatex(-54%);
+			}
+		}
+		@media (min-width:1300px){
+			img{
+				width: 1920px;
+				transform: translatex(-50%);
+				top: -150px;
+	
+			}
+		}
+	}
+}
+
+.contact{
+	@include flexFlow;
+	position:relative;
+	z-index:99999;
+	background-color:white;
+	width:100%;
+}
+
+@media (min-width:1150px){
+	.contact{
+		width: 1150px;
+		margin: auto;
+		margin-top:20px; 
+	}
+}
+
+.contactFirst{
+			background: white;
+			color: black;
+			margin-top: 30px;
+			margin-left: 10px;
+			width: 100%;
+
+			ul{
+				width: 90%;
+	    		margin: auto;
+				
+				li:nth-child(3){
+					strong{
+						text-transform: inherit;
+					}
+				}
+
+				li{
+					margin-bottom: 20px;
+
+					strong{
+						color:$purple2;
+						font-size:15px;
+						line-height: 40px;
+						font-family: "Raleway";
+						text-transform: uppercase;
+						letter-spacing: 1px;
+						font-weight: 600;
+					}
+					@media (min-width: 992px){
+						strong{font-size:17px;}
+					}
+					span{
+						color:grey;
+						font-weight: 300;
+						line-height: 12px;
+					}
+					@media (min-width:992px){
+						span{ font-size: 16px;}
+						}
+
+					.flaticon-tool, .flaticon-note, .flaticon-social {
+						font-size: 19px !important;
+						color:$purple2;
+						float: left;
+						margin:8px 20px 28px 0px;
+					}
+				}
+
+				@media (min-width:780px){
+					li{
+					margin-bottom:30px;
+					}
+				}
+			}	
+	}
+
+		@media (min-width:780px){
+			.contactFirst {
+				width: 38%;
+				margin-top: 34px;
+			}
+		}
+
+		@media (min-width:1150px){
+			.contactFirst{
+				width: 33%;
+				margin-right:5%;
+			}
+		}
+
+.contactForm{
+		width: 100%;
+		margin-top: 40px;
+		float: inherit;
+		margin-bottom: 60px;
+
+		h2{
+			background:$purple3;
+			color:white;
+			text-transform: uppercase;
+			font-size: 18px;
+			padding: 27px 0px;
+			text-align:center;
+			letter-spacing: 1px;
+			
+		}
+		@media (min-width:780px){
+			h2{
+				display: none;
+			}
+		}
+
+		.row{
+			margin-bottom: -10px !important;
+
+		}
+
+		form{
+			margin-top: 20px;
+			label{
+				font-size: 14px;
+    			color: #666;
+    			font-weight: 600;
+    			letter-spacing: 0.3px;
+			}
+			@media (min-width:992px){
+				label{ font-size:15.5px;}
+			}
+			label:active{
+				color:#666 !important;
+			}
+
+			textarea.materialize-textarea{
+				font-size: 30px !important;
+			}
+			
+			input[type=text]{
+				font-size: 13px;
+				margin-bottom:0;
+				line-height: 10px;
+				padding: 17px 0 0 0;
+
+			}
+
+			.row{
+
+			div{
+				margin-top:20px;
+			}
+			div:nth-child(4){
+
+				.select-wrapper {
+					margin-top: 0px;
+					span.caret {
+				    top: 7px !important;
+				    color:#62269e;
+				    font-size: 10px;
+					}
+				}
+				input[type=text]{
+					font-size: 14px;
+					color: #666;
+    				font-weight: 600;
+    				letter-spacing: 0.3px;
+    				padding-bottom:20px;
+    				padding-top:0;
+    				height: 2rem !important;
+				}
+
+				@media (min-width:600px){
+					input[type=text]{
+						padding-bottom:17.3px;
+					}
+				}
+				@media (min-width:992px){
+					input[type=text]{
+						font-size:15.5px;
+					}
+				}
+
+			}
+
+			div:nth-child(5){
+				margin-bottom: 20px;
+			}
+		}
+	}
+	
+}
+
+@media (min-width:780px){
+			.contactForm{
+				width: 58%;
+				margin-top: 0px;
+
+			}
+		}
+
+
+.btn-contact{
+		button{
+		font-family: 'Raleway';
+		width: 100%;
+		padding: 15px 0px;
+		font-size:14px;
+		}
+	
+}
+// .map{
+// 	position:relative;
+// 	z-index:-999999999;
+// }
+
+.white{
+	background-color:white;
+	height:50px;
+	position:relative;
+	top:140px;
+	z-index:9;
+	display:none;
+}
+
+@media (min-width:992px){
+	.white{
+	display:block;
+	top:50px;
+	}
+}
+
+.contact-map{
+		margin-top:-48px;
+}
+
+@media (min-width:992px){
+	.contact-map{
+		margin-top: -98px;
+
+	}
+}
+
+iframe{
+	position:relative;
+	border: 1px solid white;
+}
+

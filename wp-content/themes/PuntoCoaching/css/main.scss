@@ -1,0 +1,24 @@
+
+@import "mixins";
+@import "variables";
+// Reset
+@import "normalize";
+@import "scaffolding";
+
+// materialize
+@import "css/materialize.css";
+
+//layouts
+@import "interface";
+@import "home";
+@import "persona";
+@import "us";
+@import "contacto";
+@import "empresa";
+@import "cursos";
+@import "coach";
+
+// @import "css/bootstrap.min.css";
+@import "css/font-awesome.min.css";
+@import "flaticon";
+	

@@ -1,0 +1,371 @@
+#eyecatcherInEmpresa{
+	clear: both;
+	height: 264px;
+	@media (min-width:992px){
+			height: 471px;
+		}
+	.content{
+		height: 264px;
+		color: white;
+		text-align: center;
+		padding:  58px 0;
+		width: 100%;
+		@include contenImg;
+		@media (min-width:992px){
+			padding-top:96px;
+			height: 471px;
+		}
+		.text{
+			max-width: 1400px;
+			width: 100%;
+			margin: 0 auto;
+			@media (min-width:992px){
+				padding: 0 18px;
+			}
+			@media (min-width:1400px){
+				padding: 0;
+			}
+		}
+		div.degrade{
+			top: 0;
+			left: 0;
+			position: absolute;
+			z-index: -1;
+			width: 100%;
+			height: 100%;
+			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+14,000000+100&0+39,0+39,0.58+97 */
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+87,000000+100&0+22,0.62+100 */
+			background: -moz-linear-gradient(top,  rgba(0,0,0,0) 22%, rgba(0,0,0,0.52) 87%, rgba(0,0,0,0.62) 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 22%,rgba(0,0,0,0.52) 87%,rgba(0,0,0,0.62) 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to bottom,  rgba(0,0,0,0) 22%,rgba(0,0,0,0.52) 87%,rgba(0,0,0,0.62) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#9e000000',GradientType=0 ); /* IE6-9 */
+			@media (min-width:992px){
+			            	display: none;
+			 }
+
+		 }
+		>img{
+		    width: 1034px;
+		    position: absolute;
+		    transform: translatex(-47%);
+		    left: 50%;
+		    top: -3%;
+		    z-index: -2;
+		    transition: width .4s;
+		    
+		    @media (min-width:320px){
+                   transform: translatex(-40%);
+		    }
+		    @media (min-width:810px){
+                     width: 1200px;
+                     transform: translatex(-50%);
+		    }
+		    @media (min-width:992px){
+                     width: 1810px; 
+                     top: -33%;
+		    }
+		    @media (min-width:1900px){
+                     width: 2400px; 
+		    }
+		}
+		h2{
+          font-size: 12px;
+          text-transform: uppercase;
+          margin-bottom: 16px;
+		}
+		h1{
+            font-family: $font2;
+            font-size: 26px;
+            font-weight: $RSemiBold;
+		}
+		h3{
+             font-size: 26px;
+             font-family: $font2;
+             font-weight: $light;
+             width: 100%;
+             margin-bottom: 1px;
+            @media (min-width: 992px){
+            	font-size: 50px;
+            }
+		}
+		p{
+			font-size: 14px;
+			font-weight: 300;
+			bottom: 31px;
+			width: 210px;
+			line-height: 18px;
+			left: 0;
+			right: 0;
+		   @include centerAbsolute2;
+		}
+		@media (min-width: 992px){
+				h1, h3, p, h2{
+				text-align: left;
+				margin:0;
+
+				}
+				h2{
+					font-size: 16px; 
+					margin-bottom: 41px;
+				}
+
+				h1{
+					font-size: 50px; 
+					margin-bottom: 41px;
+					br{
+						display: none;
+					}
+				}
+	
+				p{
+					font-size: 24px;
+					position: inherit;
+					line-height: 38px;
+					width: 750px;
+				}
+			}
+	}
+}
+
+#InfoEmpresa{ 
+background: $purple3;
+	>.content{
+		@include flexFlow;
+		padding: 25px 0 16px;
+		@media (min-width:1400px){
+			width: 1200px;
+    		margin: auto;
+		}
+		span.line:nth-child(4){
+			display: none;
+			@media (min-width:750px){
+				display: block;
+			}
+		}
+        article{
+        	border-right: none;
+        	@media (min-width: 768px){
+        	    border-right: 1px solid rgba($blanco, .3);
+            }
+        }
+        article:last-child{
+        	border-right: 0;
+        }
+		article{
+			width: 49%;
+			padding: 27px 18px 0;
+			color: white;
+			text-align: center;
+			@media (min-width:750px){
+				width: 24%;
+				}
+			.content{
+				min-height: 135px;
+				i{
+					font-size: 29px;
+					color: rgba($blanco, .3);
+					margin-bottom: 7px;
+					display: block;
+				}
+				h4{
+					font-size: 14px;
+					font-weight: $normal;
+					margin-bottom: 14px;
+					@media (min-width:1400px){
+						font-size: 20px;
+    					font-weight: 600;
+    					margin-bottom: 19px;
+					}
+				}
+				p{
+				   font-size: 13px;
+				   font-weight:  $light;	
+				   letter-spacing: 1px;
+				   @media (min-width:1400px){
+				   	font-size: 16px;
+    				font-weight: 300;
+    				padding-bottom: 30px;
+				   }
+				}
+		    }
+
+		}
+		// span:nth-child(2){
+		// 	height: 130px;
+		// 	margin-13px: 
+		// }
+		span.line{
+			border-left: 1px solid rgba($blanco, .5);
+		    height: 130px;
+			margin: 13px 0;  
+			@media (min-width:768px){
+				margin: 35px 0;
+				display: none;
+			}
+		}
+		article:nth-child(1) .content{
+		    	border-bottom: 1px solid rgba($blanco, .5);
+		    	@media (min-width:750px){
+		    		border-bottom: 0px solid rgba($blanco, .5);
+				}
+		    }
+		article:nth-child(3) .content{
+		    	border-bottom: 1px solid rgba($blanco, .5);
+		    	@media (min-width:750px){
+		    		border-bottom: 0px solid rgba($blanco, .5);
+				}
+	
+		    }    
+	}
+}
+
+
+#resumeEmpresa{
+    padding: 36px 0 0;
+	background: #f6f6f6;
+	border-bottom: 3px solid $purple1;
+	@media (min-width: 992px){
+		padding: 92px 0 67px;
+		border-bottom: none;
+	}
+    article:nth-child(1){
+    	text-align: center;
+    	color: $purple2;
+    	margin-bottom: 32px;
+    	h3{
+    		font-size: 12px;
+    		font-weight: 500;
+    		font-style: italic;
+    		color: #878787;
+    		margin-bottom: 27px;
+    		@media (min-width: 992px){
+    			font-size: 18px;
+    			margin-bottom: 39px;
+    		}
+    	}
+    	h2{
+    		font-size: 24px;
+    		font-weight: 200;
+    		font-family: $font2;
+    		margin-bottom: 27px;
+
+    		strong{
+    			font-weight: 600;
+    			display: block;
+    		}
+    		@media (min-width: 992px){
+    			font-size: 40px;
+    			line-height: 51px ;
+    			margin-bottom: 91px;
+    		}
+    	}
+    }
+
+    article:nth-child(2){
+    	width: 100%;
+    	overflow-x: auto;
+    	padding-bottom: 27px;
+    	max-width: 1440px;
+    	margin: 0 auto;
+      .contentAside{ 
+      	padding: 0 0 0 18px;
+    	@include flexFlow;
+    	overflow-y: scroll;
+    	width: 840px;
+    	@media (min-width: 992px){
+    		width: 1140px;	
+    		padding-bottom: 0;
+    	}
+    	@media (min-width: 1440px){
+    		width: 1440px;	
+    		margin-bottom: 44px;
+    	}
+    	aside{
+    		position: relative;
+    		width: 50%;
+    		padding: 0 18px 0 0;
+    		img{
+    			width: 100%;
+    			margin-bottom: 33px;
+    			@media (min-width: 1440px){
+                      margin-bottom: 26px;
+    			}
+    		}
+    		h3{
+    			font-size: 19px;
+    			font-weight: 200;
+    			line-height: 26px;
+    			margin-bottom: 33px;
+    			font-weight: 600;
+    			color: $purpleTitle;
+    			@media (min-width: 1440px){
+                      font-size: 22px;
+                      line-height: 36px;
+                      padding: 0 24	px;
+    			}
+    		}
+    		
+
+    			ul{
+	
+    			li { 
+				    padding-left: 1em; 
+				    text-indent: -.7em;
+				    margin-bottom: 20px;
+				    @media (min-width:992px){
+                         font-size: 18px;
+                         line-height: 30px;
+                         font-weight: 100;
+                         height: auto;
+					    }
+				}
+
+				li:before {
+				    content: "■  ";
+				    color: $purple1; /* or whatever color you prefer */
+				}
+				li:after {
+					margin-left: 9px;
+				}
+
+
+    			@media (min-width: 1440px){
+                      padding: 0 24px;
+
+    			}
+    		  }
+    		
+    		span{
+    			position: absolute;
+    			background: $purpleTitle;
+    			color: $blanco;
+    			text-align: center;
+    			top: 122px;
+                left: 12px;
+    			padding: 18px ;
+    			font-size: 11px;
+    			font-family: $font2;
+    			font-weight: 600;
+    			@media (min-width: 992px){
+                   top: 192px;
+    			}
+    			@media (min-width: 1440px){
+			    		  top: 250px;	
+			    		  font-size: 14px;
+			    	}
+    		}
+    	 }
+       }
+       p{
+       	@media (min-width: 1440px){
+	   	    button{
+	             width: 225px;
+			    border-radius: 30px;
+			    font-size: 18px;
+			    padding: 13px 18px;
+		      }
+		  }    
+       }	
+    }
+
+}

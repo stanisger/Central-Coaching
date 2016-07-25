@@ -1,0 +1,69 @@
+<section id="secondSection">
+    <div class="content">
+    
+    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
+
+        <article>
+          <div id="video">
+            <img src="<?php the_field('image-2'); ?>" alt="">
+          </div>
+          <img src="<?php the_field('icon-2'); ?>" alt="">
+
+          <h2><?php the_field('title-2'); ?></strong></h2>
+          <h4><?php the_field('subtitle-2'); ?></h4>
+          <p>
+            <?php the_field('extract'); ?>
+          </p>
+          <p class="btnContent">
+           <button class="btnColor btn-1 btn-1d">CONOCE MÁS</button>
+          </p> 
+        </article>
+       
+       
+        <article>
+          <div>
+            <i class="fa fa-calendar" aria-hidden="true"></i>
+            <h4>CALENDARIO</h4>
+          </div>  
+    
+          <div id="wrapper" class="slideCalendar">
+          
+           <div id="content" style="overflow:auto;
+       height: 520px;">
+               <a href="#" class="element">
+                <div class="head">
+                  <i></i>
+                  <span><strong>20  <br>  de mayo</strong> <br>2016</span>
+                  <i></i>
+                </div>
+                <div class="text">
+                  <h1>Taller | <strong>Reescribe tu historia</strong></h1>
+                  <h3> Duración: <strong>2hr.</strong></h3>
+                </div>
+               </a>
+               
+            </div>
+
+          </div>
+            
+        <div class="degradate"></div>
+        
+        </article>
+
+    <?php endwhile; else: ?>
+    <h1>no hay post</h1>
+    <?php endif; ?> 
+
+    </div>
+    
+    <div class="controls">
+       <a class="btn-carousel" id="scrollUp" href="#">
+        <i class="flaticon-arrows-2"></i>
+      </a>
+      <a class="btn-carousel" id="scrollDown" href="#">
+        <i class="flaticon-arrows-3"></i>
+      </a>
+    </div>  
+  
+  </section>

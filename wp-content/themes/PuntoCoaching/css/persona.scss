@@ -1,0 +1,340 @@
+#eyecatcherIn{
+	clear: both;
+	height: 264px;
+	@media (min-width:992px){
+			height: 471px;
+		}
+
+	.content{
+		height: 264px;
+		color: white;
+		text-align: center;
+		padding:  58px 0;
+		width: 100%;
+		@include contenImg;
+		@media (min-width:992px){
+			padding-top:96px;
+			height: 471px;
+		}
+		.text{
+			max-width: 1400px;
+			width: 100%;
+			margin: 0 auto;
+			@media (min-width:992px){
+				padding: 0 18px;
+			}
+		}
+		div.degrade{
+			top: 0;
+			opacity: .6;
+			left: 0;
+			position: absolute;
+			z-index: -1;
+			width: 100%;
+			height: 100%;
+			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+14,000000+100&0+39,0+39,0.58+97 */
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+87,000000+100&0+22,0.62+100 */
+			background: -moz-linear-gradient(top,  rgba(0,0,0,0) 22%, rgba(0,0,0,0.52) 87%, rgba(0,0,0,0.62) 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 22%,rgba(0,0,0,0.52) 87%,rgba(0,0,0,0.62) 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to bottom,  rgba(0,0,0,0) 22%,rgba(0,0,0,0.52) 87%,rgba(0,0,0,0.62) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#9e000000',GradientType=0 ); /* IE6-9 */
+            @media (min-width:992px){
+            	display: none;
+            }
+
+		}
+		>img{
+			width: 513px;
+		    position: absolute;
+		    transform: translatex(-45%);
+		    left: 50%;
+		    top: 0;
+		    z-index: -2;
+		    transition: width .4s;
+		    @media (min-width:420px){
+		    	top: -10%;
+		        width: 854px;
+		        transform: translatex(-48%);
+		    }
+		      @media (min-width:768px){
+                    top: -20%;
+				    width: 1000px;
+				    transform: translatex(-50%);
+		      }
+		      @media (min-width:992px){
+		      	     top: -40%;
+                     width: 2000px;
+		      }
+		}
+		h2{
+          font-size: 12px;
+          text-transform: uppercase;
+          margin-bottom: 16px;
+		}
+		h1{
+            font-family: $font2;
+            font-size: 26px;
+            font-weight: 100;
+            strong{
+            	font-weight: 700;
+            }
+		}
+		p{
+			font-size: 14px;
+			font-weight: 300;
+			bottom: 31px;
+			width: 210px;
+			line-height: 18px;
+			left: 0;
+			right: 0;
+		   @include centerAbsolute2;
+		}
+
+			@media (min-width: 992px){
+				h1, h3, p, h2{
+				text-align: left;
+				margin:0;
+
+				}
+				h2{
+					font-size: 15px;
+					letter-spacing: 3px; 
+					margin-bottom: 41px;
+				}
+
+				h1{
+					font-size: 50px; 
+					margin-bottom: 41px;
+					br{
+						display: none;
+					}
+				}
+	
+				p{
+					font-size: 24px;
+					position: inherit;
+					line-height: 38px;
+					width: 580px;
+				}
+			}
+
+			@media (min-width: 1400px){
+				h1,h3{
+					padding-left: 0px;
+				}	
+			}
+		// p{
+			
+		// 	bottom: -90px;
+		// }
+	}
+}
+
+#Info{
+background: $purple3;
+	>.content{
+		@include flexFlow;
+		    padding: 8px 0 8px;
+		@media (min-width:1400px){
+			width: 916px;
+			 padding: 36px 0 30px;
+    		margin: auto;
+		}
+		span.line:nth-child(4){
+			display: none;
+			@media (min-width:750px){
+				display: block;
+			}
+		}
+
+		article{
+			width: 33%;
+			padding: 13px 18px 0;
+			color: white;
+			text-align: center;
+			// @media (min-width:750px){
+			// 	width: 24%;
+			// 	}
+			.content{
+				min-height: 135px;
+				i{
+					font-size: 29px;
+					color: rgba($blanco, .3);
+					margin-bottom: 7px;
+					display: block;
+				}
+				h4{
+					font-size: 14px;
+					font-weight: $normal;
+					margin-bottom: 14px;
+					@media (min-width:1400px){
+						font-size: 21px;
+    					font-weight: 600;
+    					margin-bottom: 19px;
+					}
+				}
+				p{
+				   font-size: 13px;
+				   font-weight:  $light;	
+				   letter-spacing: 1px;
+				   @media (min-width:1400px){
+				   	font-size: 17px;
+    				font-weight: 300;
+    				padding-bottom: 30px;
+				   }
+				}
+		    }
+
+		}
+		article:nth-child(2){
+             border-left: 1px solid rgba($blanco, .2);
+             border-right: 1px solid rgba($blanco, .2);
+		}
+
+		// article:nth-child(1) .content{
+		//     	border-bottom: 1px solid rgba($blanco, .5);
+		//     	@media (min-width:750px){
+		//     		border-bottom: 0px solid rgba($blanco, .5);
+		// 		}
+		//     }
+		// article:nth-child(2) .content{
+		//     	border-bottom: 1px solid rgba($blanco, .5);
+		//     	@media (min-width:750px){
+		//     		border-bottom: 0px solid rgba($blanco, .5);
+		// 		}
+	
+		//     }    
+	}
+}
+
+#resume{
+	padding: 36px 0 0;
+	background: #f6f6f6;
+	border-bottom: 3px solid $purple1;
+	@media (min-width:768px){
+		padding: 0;
+		border-bottom:none; 
+	}
+	.content{
+		@include flexFlow;
+			
+		article{
+			padding: 0 18px 18px;
+			width: 100%;
+			h2{
+				font-size: 24px;
+				font-weight: $light;
+				color: $purple2;
+				margin-bottom: 27px;
+				text-align: center;
+				strong{
+					font-weight: $semiBold;
+				}
+					@media (min-width:768px){
+						text-align: left;
+					}
+					@media (min-width:992px){
+                             font-size: 45px;
+                           margin-bottom: 40px;
+					}
+			}
+			h3{
+				font-size: 18px;
+				font-weight: $light;
+				margin-bottom: 27px;
+				color: $purple2;
+				line-height: 27px;
+				@media (min-width:992px){
+                         font-size: 22px;
+                         margin-bottom: 63px;
+					}
+			}
+			p{
+				font-size: 14px;
+				font-weight: $normal;
+				color: $negro;
+				margin-bottom: 27px;
+				line-height: 20px;
+				width: 100%;
+				max-width: 678px;
+				@media (min-width:992px){
+                         font-size: 18px;
+                         line-height: 30px;
+                         margin-bottom: 63px;
+					    }
+			}
+			ul {
+				    list-style: none;
+				    margin-bottom: 50	px;
+				    width: 100%;
+				    max-width: 678px;
+				}
+
+				li { 
+				    padding-left: 1em; 
+				    text-indent: -.7em;
+				    margin-bottom: 10px;
+				    @media (min-width:992px){
+                         font-size: 18px;
+                         line-height: 22px;
+                         height: 45px;
+					    }
+				}
+
+				li:before {
+				    content: "■  ";
+				    color: $purple1; /* or whatever color you prefer */
+				}
+				li:after {
+					margin-left: 9px;
+				}
+
+
+				p:last-child{
+					@media (min-width:768px){
+						text-align: left;
+					}
+					@media (min-width:992px){
+						button{
+                                 width: 225px;
+							    border-radius: 30px;
+							    font-size: 18px;
+							    padding: 13px 18px;
+						}
+					}
+				}
+
+		}
+		article:nth-child(1){
+			height: 228px;
+			margin: 0 18px 18px;
+			background-position: center !important;
+			@include cover;
+		}
+		@media (min-width:768px){
+
+			article:nth-child(1){
+				width: 60%;
+				padding: 0;
+				margin: 0 ;
+				height: auto;
+			}
+			article:nth-child(2){
+				width: 40%;
+				padding: 36px 18px;
+			}
+		}
+		@media (min-width:992px){
+			article:nth-child(1){
+				width: 50%;
+			} 
+			article:nth-child(2){
+				width: 50%;
+				padding: 114px 45px 50px 73px;
+			}
+
+		}
+
+	}
+}
+
